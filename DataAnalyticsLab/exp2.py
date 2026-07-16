@@ -1,19 +1,14 @@
 import pandas as pd
 import numpy as np
-
 # Read dataset from CSV
 df = pd.read_csv("student_data.csv")
-
 objects = df["Object"]
 departments = df["Department"]
 marks = df["Marks"]
-
 n = len(df)
-
 # ----------------------------
 # Nominal Symmetric
-# ----------------------------
-
+# -----------------------------
 nom_sim = np.zeros((n, n))
 nom_dis = np.zeros((n, n))
 
@@ -25,7 +20,6 @@ for i in range(n):
         else:
             nom_sim[i][j] = 0
             nom_dis[i][j] = 1
-
 # ----------------------------
 # Nominal Asymmetric
 # ----------------------------
