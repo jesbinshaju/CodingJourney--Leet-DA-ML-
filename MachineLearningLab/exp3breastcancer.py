@@ -139,6 +139,10 @@ class LogisticRegressionMAP:
 
             p = sigmoid(z)
 
+
+
+
+
             # MAP Loss
             loss = (
                 -np.mean(
