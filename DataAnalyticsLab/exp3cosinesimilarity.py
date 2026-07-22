@@ -110,3 +110,4 @@ elif cosine_similarity > 0.5:
     print("Documents are Moderately Similar.")
 else:
     print("Documents are Less Similar.")
+    ff
